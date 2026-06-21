@@ -11,6 +11,7 @@ import Experts from './pages/Experts';
 import DietPlans from './pages/DietPlans';
 import Gallery from './pages/Gallery';
 import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 import ProductDetail from './pages/ProductDetail';
 
 function ScrollToTop() {
@@ -45,6 +46,7 @@ function App() {
             <Route path="/diet-plans" element={<DietPlans />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogDetail />} />
           </Routes>
         </main>
         <Footer />

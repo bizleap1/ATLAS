@@ -1,22 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Blog() {
   const posts = [
     {
+      id: "cellular-absorption",
       title: "The Science of Cellular Absorption",
       excerpt: "Understanding why Magnesium Bisglycinate outperforms other forms of magnesium in clinical trials.",
       date: "Oct 12, 2026",
       image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80"
     },
     {
+      id: "autoimmune-healing",
       title: "Nutrition for Autoimmune Healing",
       excerpt: "How dietary interventions are shifting the paradigm for patients with chronic inflammation.",
       date: "Sep 28, 2026",
       image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80"
     },
     {
+      id: "gut-brain-connection",
       title: "Gut-Brain Connection Decoded",
       excerpt: "The latest research on how your microbiome directly influences anxiety and cognitive performance.",
       date: "Sep 15, 2026",
@@ -55,9 +59,9 @@ export default function Blog() {
                   <h3 className="text-2xl font-bold text-teal-950 mb-4 leading-tight">{post.title}</h3>
                   <p className="text-teal-800/70">{post.excerpt}</p>
                 </div>
-                <button className="mt-8 flex items-center text-teal-700 font-bold hover:text-cyan-600 transition-colors">
+                <Link to={`/blog/${post.id}`} className="mt-8 flex items-center text-teal-700 font-bold hover:text-cyan-600 transition-colors">
                   Read Article <ArrowRight className="ml-2 w-4 h-4" />
-                </button>
+                </Link>
               </div>
             </motion.div>
           ))}

@@ -248,11 +248,20 @@ export default function Navbar() {
         <div className="p-6 flex flex-col gap-6 mt-20 h-full overflow-y-auto custom-scrollbar" data-lenis-prevent="true">
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-teal-950 border-b border-gray-100 pb-4">Home</Link>
           <Link to="/products" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-teal-950 border-b border-gray-100 pb-4">Products</Link>
-          <Link to="/experts" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-teal-950 border-b border-gray-100 pb-4">Talk to Our Expert</Link>
           <Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-teal-950 border-b border-gray-100 pb-4">Gallery</Link>
           <Link to="/blog" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-teal-950 border-b border-gray-100 pb-4">Blog</Link>
           <Link to="/diet-plans" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-teal-950 border-b border-gray-100 pb-4">Diet Plans</Link>
           <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-bold text-teal-950 border-b border-gray-100 pb-4">About Us</Link>
+          
+          <div className="mt-auto pt-8 pb-4">
+            <Link 
+              to="/experts" 
+              onClick={() => setIsMobileMenuOpen(false)} 
+              className="block w-full text-center bg-teal-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-teal-700 transition-colors shadow-md"
+            >
+              Talk to Our Expert
+            </Link>
+          </div>
         </div>
       </div>
     </div>
