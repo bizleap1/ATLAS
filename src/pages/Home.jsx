@@ -21,6 +21,7 @@ export default function Home() {
           loop 
           muted 
           playsInline 
+          preload="auto"
           className="h-full w-full object-cover object-[75%_center] mix-blend-multiply"
         >
           <source src="/ATLAS_MAG-B6_bottle_commercial_202606201352.mp4" type="video/mp4" />
