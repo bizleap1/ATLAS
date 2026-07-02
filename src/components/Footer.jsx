@@ -19,6 +19,12 @@ export default function Footer() {
             <p className="text-teal-200/80 leading-relaxed text-sm">
               Discover our most trusted, scientifically backed formulations designed for your modern lifestyle. Elevate your health with ATLAS.
             </p>
+            <p className="text-teal-200/80 text-sm mt-2">
+              Developed and Managed by{' '}
+              <a href="https://bizleap.in/" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-white transition-colors font-bold">
+                BIZLEAP
+              </a>
+            </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-teal-900/80 flex items-center justify-center text-teal-300 hover:bg-teal-500 hover:text-white transition-all shadow-lg hover:shadow-teal-500/25 border border-teal-800/50">
                 <FaFacebookF className="w-5 h-5" />
